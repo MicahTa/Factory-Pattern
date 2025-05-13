@@ -2,20 +2,19 @@
 {
     public class Program
     {
-        static bool Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("How many wheals does your vehicle have?");
             string? input = Console.ReadLine();
             
             IVehicle? vehicle = VehicleFactory.GetVehicle(input);
-            if (vehicle == null) {
+            if (vehicle == null)
+            {
                 Console.WriteLine("No Vehicle Exists ): ");
-                return false;
+            } else
+            {
+               Console.WriteLine(vehicle.type); 
             }
-            
-            Console.WriteLine(vehicle.type);
-            return true;
-
         }
     }
 }

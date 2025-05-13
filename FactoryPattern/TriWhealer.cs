@@ -1,4 +1,5 @@
 
-public class TriWhealer : IVehicle {
+public class TriWhealer : IVehicle
+{
     public string type => "TriWhealer";
 }

@@ -1,7 +1,9 @@
 
-interface IVehicle {
+interface IVehicle
+{
     string type { get; }
-    public void Drive () {
+    public void Drive ()
+    {
         Console.WriteLine("Vroom");
     }
 }
